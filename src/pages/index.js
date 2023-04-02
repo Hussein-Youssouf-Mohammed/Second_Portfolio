@@ -1,4 +1,3 @@
-import Link from "next/link"
 import Script from "next/script"
 
 const Home   = ()  =>  {
@@ -6,13 +5,13 @@ const Home   = ()  =>  {
      <div>
           <header>
         <div className="container">
-            <Link href="#" className="logo">Portfolio.</Link>
+            <a href="#" className="logo">Portfolio.</a>
             <i className="fa fa-bars fa-2x toggle-bar"></i>
             <nav>
-                <Link href="#home">Home</Link>
-                <Link href="#services">Services</Link>
-                <Link href="#projects">Projects</Link>
-                <Link href="#contact">Contact Me</Link>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact Me</a>
             </nav>
         </div>
     </header>
@@ -69,7 +68,7 @@ const Home   = ()  =>  {
                 <div className="project-content">
                     <h4>Web Desgin</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate!</p>
-                    <Link href="#"><i className="fas fa-external-link-alt"></i></Link>
+                    <a href="#"><i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
 
@@ -78,7 +77,7 @@ const Home   = ()  =>  {
                 <div className="project-content">
                     <h4>Web Desgin</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate!</p>
-                    <Link href="#"><i className="fas fa-external-link-alt"></i></Link>
+                    <a href="#"><i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
 
@@ -87,7 +86,7 @@ const Home   = ()  =>  {
                 <div className="project-content">
                     <h4>Web Desgin</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate!</p>
-                    <Link href="#"><i className="fas fa-external-link-alt"></i></Link>
+                    <a href="#"><i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
 
@@ -96,7 +95,7 @@ const Home   = ()  =>  {
                 <div className="project-content">
                     <h4>Web Desgin</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate!</p>
-                    <Link href="#"><i className="fas fa-external-link-alt"></i></Link>
+                    <a href="#"><i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
 
@@ -105,7 +104,7 @@ const Home   = ()  =>  {
                 <div className="project-content">
                     <h4>Web Desgin</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate!</p>
-                    <Link href="#"><i className="fas fa-external-link-alt"></i></Link>
+                    <a href="#"><i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
 
@@ -114,7 +113,7 @@ const Home   = ()  =>  {
                 <div className="project-content">
                     <h4>Web Desgin</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate!</p>
-                    <Link href="#"><i className="fas fa-external-link-alt"></i></Link>
+                    <a href="#"><i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
 
@@ -123,7 +122,7 @@ const Home   = ()  =>  {
                 <div className="project-content">
                     <h4>Web Desgin</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate!</p>
-                    <Link href="#"><i className="fas fa-external-link-alt"></i></Link>
+                    <a href="#"><i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
 
@@ -132,7 +131,7 @@ const Home   = ()  =>  {
              <div className="project-content">
                     <h4>Web Desgin</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate!</p>
-                    <Link href="#"><i className="fas fa-external-link-alt"></i></Link>
+                    <a href="#"><i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             
@@ -141,7 +140,7 @@ const Home   = ()  =>  {
                 <div className="project-content">
                     <h4>Web Desgin</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate!</p>
-                    <Link href="#"><i className="fas fa-external-link-alt"></i></Link>
+                    <a href="#"><i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             
@@ -150,7 +149,7 @@ const Home   = ()  =>  {
                 <div className="project-content">
                     <h4>Web Desgin</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate!</p>
-                    <Link href="#"><i className="fas fa-external-link-alt"></i></Link>
+                    <a href="#"><i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div className="project">
@@ -158,7 +157,7 @@ const Home   = ()  =>  {
                 <div className="project-content">
                     <h4>Web Desgin</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate!</p>
-                    <Link href="#"><i className="fas fa-external-link-alt"></i></Link>
+                    <a href="#"><i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div className="project">
@@ -166,7 +165,7 @@ const Home   = ()  =>  {
                 <div className="project-content">
                     <h4>Web Desgin</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate!</p>
-                    <Link href="#"><i className="fas fa-external-link-alt"></i></Link>
+                    <a href="#"><i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             
@@ -188,9 +187,9 @@ const Home   = ()  =>  {
                 <p>copyright &copy; 2023 by Hus<span>suein</span> You<span>ssouf </span>  All Right Reserved.</p>
             
             </div>
-            <Link href="#home" className="icon">
+            <a href="#home" className="icon">
                 <i className="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
-            </Link>
+            </a>
         </div>
     </footer>
     <Script src="../js/main.js"></Script>

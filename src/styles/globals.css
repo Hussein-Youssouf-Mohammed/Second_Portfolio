@@ -33,8 +33,11 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* Small */
+@media (min-width: 280px) {
+  .container {
+    width: 100%;
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -506,6 +509,18 @@ footer .container .icon:hover {
 @media (min-width: 768px) {
   header .container .toggle-bar {
     display: none;
+  }
+}
+@media (max-width: 898px) {
+  
+  .projects .container {
+    width: 100%;
+  }
+}
+@media (max-width: 653) {
+  .container {
+    padding: 0;
+    width: 100%;
   }
 }
 /* end header *//*# sourceMappingURL=style.css.map */
