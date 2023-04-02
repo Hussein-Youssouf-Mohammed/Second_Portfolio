@@ -1,0 +1,511 @@
+@import url('/js/main.js');
+@import url('/css/all.min.css');
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+:root {
+  --bg-color: #1f242d;
+  --sec-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+a {
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+/*end rules*/
+/* Start Header  */
+header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  transition: 0.5s;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+}
+header .container .logo {
+  font-size: 30px;
+  font-weight: 500;
+}
+header .container .toggle-bar {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container nav {
+  display: flex;
+}
+header .container nav a {
+  display: block;
+  margin-right: 30px;
+  font-size: 18px;
+  transition: 0.4s;
+}
+header .container nav a:hover {
+  color: var(--main-color);
+}
+header.scroll {
+  background-color: var(--sec-bg-color);
+}
+
+.loading {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+}
+.loading .container {
+  display: flex;
+  justify-content: space-between;
+}
+.loading .container .content {
+  width: 600px;
+  padding-top: 100px;
+}
+.loading .container .content h2 {
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.loading .container .content h1 {
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.loading .container .content h1 span {
+  color: var(--main-color);
+  box-shadow: 0 0 0 var(--main-color);
+}
+.loading .container .content p {
+  font-size: 19px;
+  line-height: 1.7;
+  width: 400px;
+  margin-bottom: 10px;
+}
+.loading .container .content .scoial {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.loading .container .content .scoial li {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  box-shadow: none;
+}
+.loading .container .content .scoial li:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+.loading .container .content .btn {
+  box-shadow: none;
+}
+.loading .container .content .btn:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+.loading .container .img {
+  display: flex;
+  flex: 1;
+  width: 800px;
+  height: 800px;
+  position: relative;
+}
+.loading .container .img .img-back {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  top: 0;
+  background-color: var(--main-color);
+  overflow: hidden;
+  box-shadow: 0 0 3rem var(--main-color);
+}
+.loading .container .img img {
+  width: 500px;
+  height: 500px;
+  left: 40px;
+  border-radius: 50%;
+  z-index: 998;
+  position: absolute;
+  top: 40px;
+}
+
+.services {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: var(--text-color);
+}
+.services h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 32px;
+}
+.services h2 span {
+  color: var(--main-color);
+}
+.services .container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.services .container .service {
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  box-shadow: none;
+  background-color: var(--sec-bg-color);
+  border: 0.2rem solid var(--bg-color);
+  text-align: center;
+  transition: 0.4s;
+}
+.services .container .service:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+}
+.services .container .service i {
+  color: var(--main-color);
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+.services .container .service i:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+.services .container .service h3 {
+  font-size: 2.8rem;
+}
+.services .container .service p {
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
+}
+.services .container .service .btn {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.projects {
+  color: var(--text-color);
+  background-color: var(--sec-bg-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.projects h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 100px;
+  font-weight: 700;
+}
+.projects h2 span {
+  color: var(--main-color);
+}
+.projects .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.projects .container .project {
+  position: relative;
+  box-shadow: 0 0 1rem var(--bg-color);
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+}
+.projects .container .project:hover img {
+  transform: scale(1.2);
+}
+.projects .container .project:hover .project-content {
+  transform: translateY(0);
+}
+.projects .container .project img {
+  width: 100%;
+  transition: 0.4s;
+}
+.projects .container .project .project-content {
+  position: absolute;
+  left: 0;
+  transition: 0.5s ease;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  flex-direction: column;
+  text-align: center;
+  transform: translateY(100%);
+}
+.projects .container .project .project-content h4 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.projects .container .project .project-content p {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.projects .container .project .project-content a {
+  display: inline-flex;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.projects .container .project .project-content a i {
+  font-size: 20px;
+  color: var(--sec-bg-color);
+}
+
+.contact {
+  background-color: var(--bg-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-color);
+}
+.contact h2 span {
+  color: var(--main-color);
+}
+.contact .container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+.contact .container input, .contact .container textarea {
+  width: 50%;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  background-color: var(--sec-bg-color);
+  margin: 0 auto;
+}
+.contact .container textarea {
+  height: 200px;
+  resize: none;
+}
+.contact .container .btn {
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 1rem var(--main-color);
+  padding: 1rem 2rem;
+}
+.contact .container .btn:hover {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+footer {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-color: var(--sec-bg-color);
+  color: var(--text-color);
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .container .text {
+  font-size: 1.5rem;
+}
+footer .container .text span {
+  color: var(--main-color);
+}
+footer .container .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 1rem;
+  background-color: var(--main-color);
+  box-shadow: 0 0 1rem var(--main-color);
+  transition: 0.4s;
+}
+footer .container .icon:hover {
+  box-shadow: none;
+}
+
+@media (max-width: 767px) {
+  header {
+    position: fixed;
+  }
+  header .container .toggle-bar {
+    color: white;
+  }
+  header .container .toggle-bar:hover + nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-color);
+    opacity: 1.9;
+    z-index: 99;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container nav a {
+    padding: 15px;
+  }
+  .loading .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .loading .container .content {
+    width: 100%;
+    padding-top: 40px;
+  }
+  .loading .container .content h2 {
+    font-size: 28px;
+  }
+  .loading .container .content h1 {
+    font-size: 29px;
+  }
+  .loading .container .content p {
+    width: 100%;
+    line-height: 1.1;
+  }
+  .loading .container .img {
+    display: flex;
+    flex: 1;
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+  .loading .container .img .img-back {
+    position: absolute;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+    width: 230px;
+    left: 30px;
+    border-radius: 50%;
+    top: 0;
+    background-color: var(--main-color);
+    overflow: hidden;
+    box-shadow: 0 0 3rem var(--main-color);
+  }
+  .loading .container .img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 998;
+    position: absolute;
+    top: 50px;
+    left: 45px;
+  }
+  .services h2 {
+    padding-top: 40px;
+  }
+  .services .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .container input, .contact .container textarea{
+    width: 100%;
+  }
+  .contact .container .btn {
+    width: 100%;
+  }
+  footer .icon {
+  margin-top: 20px;
+
+  }
+}
+@media (min-width: 768px) {
+  header .container .toggle-bar {
+    display: none;
+  }
+}
+/* end header *//*# sourceMappingURL=style.css.map */
