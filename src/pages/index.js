@@ -18,9 +18,10 @@ const Home   = ()  =>  {
     <div className="loading" id="home">
         <div className="container">
             <div className="content">
-                <h2>Hi There's</h2>
-                <h1>I 'am Hus<span>sein</span> Yo<span>usso</span>uf <br /> Full Stack Web Developer</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, obcaecati odio similique sunt nesciunt labore maxime totam sit dolore provident!</p>
+                <h2>Hi there , </h2>
+                <h1>I 'm Hus<span>sein</span> Yo<span>usso</span>uf <br /> Full Stack Web Developer</h1>
+                <p>As an ambitious and hardworking individual, I have experience in the IT field, especially in web development, and I can work both front
+and back. I am currently seeking a job to take my career to a better level</p>
                 <button className="btn">Download Cv</button>
                 <div className="scoial">
                     <li><i className="fab fa-facebook fa-2x"></i></li>
